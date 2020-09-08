@@ -13,3 +13,7 @@
 
 // Remember use actually path on folder that do not use xcode looks.
 #include "Pods/Target Support Files/Pods-DemoSchemesSetting/Pods-DemoSchemesSetting.development.xcconfig"
+
+// App Settings
+APP_NAME = DemoSchemes (dev)
+APP_BUNDLE_ID = com.kin.DemoSchemesSetting.dev
