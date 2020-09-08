@@ -1,0 +1,15 @@
+//
+//  Development.xcconfig
+//  DemoSchemesSetting
+//
+//  Created by KinWei on 2020/9/8.
+//  Copyright © 2020 KinWei. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../Shared.xcconfig"
+
+// Remember use actually path on folder that do not use xcode looks.
+#include "Pods/Target Support Files/Pods-DemoSchemesSetting/Pods-DemoSchemesSetting.development.xcconfig"
