@@ -42,3 +42,6 @@ API_BASE_URL = www.staging.com
 
 // Log enable/disable
 LOG_ENABLE = YES
+
+TEST_INT = 200
+TEST_DOUBLE = 200.002

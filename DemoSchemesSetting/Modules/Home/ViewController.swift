@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view.
     print(Environment.apiBaseURL())
     print(Environment.logEnable())
+    print(Environment.testInt())
+    print(Environment.testDouble())
   }
 
 

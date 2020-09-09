@@ -13,6 +13,8 @@ public enum Environment {
     enum Plist {
       static let apiBaseURL = "API_BASE_URL"
       static let logEnable = "LOG_ENABLE"
+      static let testInt = "TEST_INT"
+      static let testDouble = "TEST_DOUBLE"
     }
   }
 
@@ -49,10 +51,32 @@ public enum Environment {
   static func logEnable() -> Bool {
     let key = #function.replacingOccurrences(of: "()", with: "")
 
-    guard let apiKey = Environment.infoDictionary[Keys.Plist.logEnable] as? NSString else {
+    guard let logEnable = Environment.infoDictionary[Keys.Plist.logEnable] as? NSString else {
       fatalError("\(key) not set in plist for this environment")
     }
-    return apiKey.boolValue
+    return logEnable.boolValue
+  }
+
+  /** Example to set integer value on plist and get. */
+  static func testInt() -> Int {
+    let key = #function.replacingOccurrences(of: "()", with: "")
+
+    guard let testInt = Environment.infoDictionary[Keys.Plist.testInt] as? NSString else {
+      fatalError("\(key) not set in plist for this environment")
+    }
+
+    return testInt.integerValue
+  }
+
+  /** Example to set double value on plist and get. */
+  static func testDouble() -> Double {
+    let key = #function.replacingOccurrences(of: "()", with: "")
+
+    guard let testDouble = Environment.infoDictionary[Keys.Plist.testDouble] as? NSString else {
+      fatalError("\(key) not set in plist for this environment")
+    }
+
+    return testDouble.doubleValue
   }
 
 }

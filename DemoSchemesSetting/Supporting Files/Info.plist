@@ -45,5 +45,9 @@
 	<string>$(LOG_ENABLE)</string>
 	<key>API_BASE_URL</key>
 	<string>$(API_BASE_URL)</string>
+	<key>TEST_INT</key>
+	<string>$(TEST_INT)</string>
+	<key>TEST_DOUBLE</key>
+	<string>$(TEST_DOUBLE)</string>
 </dict>
 </plist>

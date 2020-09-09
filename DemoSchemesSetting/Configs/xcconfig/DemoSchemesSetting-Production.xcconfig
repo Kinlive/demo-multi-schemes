@@ -42,3 +42,6 @@ API_BASE_URL = www.production.com
 
 // Log enable/disable
 LOG_ENABLE = NO
+
+TEST_INT = 300
+TEST_DOUBLE = 300.003
