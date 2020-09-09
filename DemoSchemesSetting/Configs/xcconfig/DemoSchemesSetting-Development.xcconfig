@@ -38,7 +38,9 @@ BUNDLE_BUILD_VERSION = 1
 // define something for code use.
 //########################################################
 // API base
-API_BASE_URL = www.dev.com
+// If url had double slash need inserts $() in between them
+// e.g. https://medium.com/better-programming/working-with-xcode-configuration-files-398cfbe02b64
+API_BASE_URL = https:/$()/medium.com/better-programming/working-with-xcode-configuration-files-398cfbe02b64
 
 // Log enable/disable
 LOG_ENABLE = YES
